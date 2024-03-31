@@ -98,7 +98,7 @@ export default function Page() {
             <div className="bg-gray-200 p-2 rounded-md mb-2">
                 <label>Sizes</label>
                 {sizes.length > 0 && sizes.map((s,index) =>(
-                    <div className="flex items-end gap-2">
+                    <div key={index} className="flex items-end gap-2">
                       <div>
                         <label >Size Name</label>
                         <input
